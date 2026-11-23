@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nintendo Shrine — La légende du jeu vidéo</title>
+  <meta name="description" content="Site fan dédié à l'histoire, aux consoles et aux licences légendaires de Nintendo." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="navbar" id="navbar">
+    <a class="brand" href="#hero">
+      <span class="brand-dot" aria-hidden="true"></span>
+      <span class="brand-name">NINTENDO<span class="brand-sub">SHRINE</span></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#licences">Licences</a>
+      <a href="#consoles">Consoles</a>
+      <a href="#timeline">Histoire</a>
+      <a href="#quiz">Quiz</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="pixel-cloud c1" aria-hidden="true"></div>
+      <div class="pixel-cloud c2" aria-hidden="true"></div>
+      <div class="pixel-cloud c3" aria-hidden="true"></div>
+      <div class="coin" id="coin" aria-hidden="true"></div>
+      <p class="hero-kicker">Depuis 1889 &middot; Kyoto, Japon</p>
+      <h1 class="hero-title">
+        LA LÉGENDE<br /><span>DU JEU VIDÉO</span>
+      </h1>
+      <p class="hero-sub">
+        Des cartes à hanafuda aux mondes en 3D : plonge dans l'univers qui a
+        façonné l'enfance de plusieurs générations de joueurs.
+      </p>
+      <div class="hero-actions">
+        <a href="#licences" class="btn btn-primary">Commencer l'aventure</a>
+        <a href="#quiz" class="btn btn-ghost">Tester ma culture 🎮</a>
+      </div>
+      <div class="dpad" aria-hidden="true"><span class="dpad-v"></span><span class="dpad-h"></span></div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats reveal">
+      <div class="stat"><span class="stat-num" data-count="135">0</span><span class="stat-label">ans d'histoire</span></div>
+      <div class="stat"><span class="stat-num" data-count="830">0</span><span class="stat-label">millions de consoles vendues</span></div>
+      <div class="stat"><span class="stat-num" data-count="195">0</span><span class="stat-label">millions de jeux vendus</span></div>
+      <div class="stat"><span class="stat-num" data-count="1">0</span><span class="stat-label">plombier mustachu</span></div>
+    </section>
+
+    <!-- LICENCES -->
+    <section class="section" id="licences">
+      <h2 class="section-title reveal">Licences <em>légendaires</em></h2>
+      <p class="section-sub reveal">Quelques mondes qui ont défini le jeu vidéo, génération après génération.</p>
+      <div class="cards">
+        <article class="card reveal card-mario">
+          <div class="card-art" aria-hidden="true"><span class="mushroom"></span></div>
+          <span class="card-tag">Plateforme</span>
+          <h3>Super Mario</h3>
+          <p>Le plombier le plus célèbre du monde. Depuis 1985, il sauve la princesse, saute sur les Goombas et réinvente le platformer à chaque épisode.</p>
+          <footer><span>1985</span><span>+40 jeux</span></footer>
+        </article>
+        <article class="card reveal card-zelda">
+          <div class="card-art" aria-hidden="true"><span class="triforce"></span></div>
+          <span class="card-tag">Action-Aventure</span>
+          <h3>The Legend of Zelda</h3>
+          <p>It's dangerous to go alone ! Link, Hyrule et la Triforce : l'aventure épique qui a inventé le monde ouvert moderne avec Breath of the Wild.</p>
+          <footer><span>1986</span><span>+20 jeux</span></footer>
+        </article>
+        <article class="card reveal card-metroid">
+          <div class="card-art" aria-hidden="true"><span class="orb"></span></div>
+          <span class="card-tag">Sci-Fi</span>
+          <h3>Metroid</h3>
+          <p>Samus Aran, la chasseuse de primes en combinaison Varia. Atmosphère, exploration et speedruns : le genre « Metroidvania » lui doit tout.</p>
+          <footer><span>1986</span><span>+15 jeux</span></footer>
+        </article>
+        <article class="card reveal card-pokemon">
+          <div class="card-art" aria-hidden="true"><span class="pokeball"></span></div>
+          <span class="card-tag">RPG</span>
+          <h3>Pokémon</h3>
+          <p>Attrape-les tous ! La licence la plus rentable de l'histoire du divertissement, née de l'imagination de Game Freak en 1996.</p>
+          <footer><span>1996</span><span>1025 créatures</span></footer>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONSOLES -->
+    <section class="section section-alt" id="consoles">
+      <h2 class="section-title reveal">La <em>ligne</em> des consoles</h2>
+      <p class="section-sub reveal">Fais défiler le temps avec les flèches ⬅️ ➡️ ou glisse sur les cartes.</p>
+      <div class="carousel-wrap reveal">
+        <button class="car-btn prev" id="prevBtn" aria-label="Console précédente">‹</button>
+        <div class="carousel" id="carousel">
+          <article class="consoles-card">
+            <div class="console-visual nes" aria-hidden="true"><i></i></div>
+            <span class="console-year">1983</span>
+            <h3>NES</h3>
+            <p>8 bits, 62,9 millions d'exemplaires. Elle a ressuscité l'industrie après le crash de 1983.</p>
+          </article>
+          <article class="consoles-card">
+            <div class="console-visual snes" aria-hidden="true"><i></i></div>
+            <span class="console-year">1990</span>
+            <h3>Super Nintendo</h3>
+            <p>16 bits, sprites somptueux et le fameux Mode 7 : Super Mario World et Zelda: A Link to the Past y deviennent cultes.</p>
+          </article>
+          <article class="consoles-card">
+            <div class="console-visual n64" aria-hidden="true"><i></i></div>
+            <span class="console-year">1996</span>
+            <h3>Nintendo 64</h3>
+            <p>Le stick analogique, la gâchette Z et Super Mario 64 : la 3D entre dans les salons.</p>
+          </article>
+          <article class="consoles-card">
+            <div class="console-visual wii" aria-hidden="true"><i></i></div>
+            <span class="console-year">2006</span>
+            <h3>Wii</h3>
+            <p>Le motion gaming grand public. 101,6 millions de ventes et des réunions de famille épiques.</p>
+          </article>
+          <article class="consoles-card">
+            <div class="console-visual switch" aria-hidden="true"><i></i></div>
+            <span class="console-year">2017</span>
+            <h3>Switch</h3>
+            <p>Hybride salon / portable. Plus de 140 millions de ventes : un record absolu pour Nintendo.</p>
+          </article>
+        </div>
+        <button class="car-btn next" id="nextBtn" aria-label="Console suivante">›</button>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="section" id="timeline">
+      <h2 class="section-title reveal">Une <em>histoire</em> en dates</h2>
+      <ol class="timeline">
+        <li class="reveal"><strong>1889</strong> — Fusajiro Yamauchi fonde Nintendo pour fabriquer des cartes hanafuda.</li>
+        <li class="reveal"><strong>1977</strong> — La Color TV-Game : première console de salon. Un certain Shigeru Miyamoto est embauché.</li>
+        <li class="reveal"><strong>1981</strong> — Donkey Kong aux bornes d'arcade : Mario (alors « Jumpman ») naît.</li>
+        <li class="reveal"><strong>1989</strong> — La Game Boy rend le jeu portable au prix d'une pile pour 30 heures.</li>
+        <li class="reveal"><strong>2006</strong> — La Wii élargit le jeu vidéo à toute la famille grâce à ses télécommandes.</li>
+        <li class="reveal"><strong>2017</strong> — La Switch fusionne portable et salon et établit tous les records.</li>
+      </ol>
+    </section>
+
+    <!-- QUIZ -->
+    <section class="section section-alt" id="quiz">
+      <h2 class="section-title reveal">Quiz <em>éclair</em></h2>
+      <p class="section-sub reveal">3 questions. Zéro pression. C'est parti !</p>
+      <div class="quiz reveal" id="quiz">
+        <p class="quiz-question" id="quizQuestion"></p>
+        <div class="quiz-answers" id="quizAnswers"></div>
+        <p class="quiz-feedback" id="quizFeedback" role="status"></p>
+        <p class="quiz-score" id="quizScore"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer-disclaimer">
+      Site fan non officiel, créé pour le plaisir. Nintendo et toutes les licences associées
+      sont des marques de Nintendo Co., Ltd. Ce site n'est ni affilié ni approuvé par Nintendo.
+    </p>
+    <p class="footer-consoles" aria-hidden="true">★ NES · SNES · N64 · GC · Wii · Wii U · Switch ★</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
